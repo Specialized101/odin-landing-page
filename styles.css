@@ -8,6 +8,26 @@
 
 }
 
+:root {
+    --light-mode: #fff;
+    --dark-mode: #36475f;
+}
+
+.dark-theme {
+    --light-mode: #36475f;
+    --dark-mode: #fff;
+}
+
+#icon {
+    width: 40px;
+    padding: 4px;
+    cursor: pointer;
+}
+
+#icon:hover {
+    border: 1px solid white;
+    border-radius: 50%;
+}
 
 .section1 {
     background-color: #1f2937;
@@ -47,6 +67,7 @@
     display: flex;
     list-style: none;
     gap: 15px;
+    align-items: center;
 }
 
 li a {
@@ -63,10 +84,10 @@ h1 {
 
 h2 {
     font-size: 36px;
-    color: #1f2937;
+    color: var(--dark-mode);
     font-weight: 900;
     text-align: center;
-    margin-top: 50px;
+    padding-top: 50px;
     margin-bottom: 30px;
 }
 
@@ -97,7 +118,7 @@ h2 {
 }
 
 .section2 {
-    background-color: white;
+    background-color: var(--light-mode);
 }
 
 .random-info {
@@ -113,7 +134,7 @@ h2 {
 .vignette p {
     width: 170px;
     font-size: 18px;
-    color: #1f2937;
+    color: var(--dark-mode);
     text-align: justify;
     margin-top: 8px;
 }
@@ -148,7 +169,10 @@ h2 {
 }
 
 .section4 {
-    background-color: white;
+    background-color: var(--light-mode);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .container {
@@ -163,6 +187,10 @@ h2 {
     font-size: 18px;
     color: #e5e7eb;
     gap: 10px;
+}
+
+.subsection4-text {
+    margin-right: 120px;
 }
 
 .section5{
